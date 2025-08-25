@@ -36,5 +36,26 @@
     <ClCompile Include="250825.8-2-2.電圧表示.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="250825.8-2-1.ワット計算.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="250825.8-2-3.引数16進数戻値表示.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="250825.戻り値練習.8-3-1.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0825.1関数1機能.8-3-2.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0825.8-4-1.関数まとめ.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0825.8-4-2.BMI関数.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0825.8-4-8長方形出力.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
