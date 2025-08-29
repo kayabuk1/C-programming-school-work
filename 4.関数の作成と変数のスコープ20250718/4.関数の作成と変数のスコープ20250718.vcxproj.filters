@@ -60,5 +60,26 @@
     <ClCompile Include="0829.変数のスコープ.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="0829.8-5-1.変数のスコープや寿命.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0829.静的変数.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0829#include文.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0829.ex_pre1B.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0829.defineによる置き換え文.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0829配列%281%29.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0829.配列%282%29.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
