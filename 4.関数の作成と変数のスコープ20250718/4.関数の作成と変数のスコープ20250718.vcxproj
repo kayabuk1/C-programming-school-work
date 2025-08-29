@@ -136,7 +136,10 @@
     <ClCompile Include="0825.8-4-2.BMI関数.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="0825.8-4-8長方形出力.c" />
+    <ClCompile Include="0825.8-4-8長方形出力.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="0829.変数のスコープ.c" />
     <ClCompile Include="250825.8-2-1.ワット計算.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
