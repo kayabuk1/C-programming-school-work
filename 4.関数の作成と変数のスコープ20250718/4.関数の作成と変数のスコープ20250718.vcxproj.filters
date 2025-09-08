@@ -81,5 +81,8 @@
     <ClCompile Include="0829.配列%282%29.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="0908.6-3.文字列.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
