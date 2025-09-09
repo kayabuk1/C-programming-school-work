@@ -30,5 +30,8 @@
     <ClCompile Include="0908.7-2.配列とポインタ.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="0909.7-1.復習アドレスとポインタ.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
