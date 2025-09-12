@@ -33,5 +33,14 @@
     <ClCompile Include="0909.7-1.復習アドレスとポインタ.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="0912.9-1-5.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0912.7.3文字列とポインタ.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0912.7.4.値渡しとアドレス渡し.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
