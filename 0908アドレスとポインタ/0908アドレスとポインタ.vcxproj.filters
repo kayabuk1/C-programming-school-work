@@ -42,5 +42,8 @@
     <ClCompile Include="0912.7.4.値渡しとアドレス渡し.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="0914.7.3の復習.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
