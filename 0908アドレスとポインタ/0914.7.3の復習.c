@@ -17,8 +17,9 @@ int main(void)
 	while (*p != '\0') {
 		putchar(*p);
 		p++;
-	}
-	putchar('\n');//strはtestpoin
+	}　　　　　　　　　　　//この時点でpはstrの最後の文字'n'の次の'\0'を指している。
+	putchar('\n');　　　　//strはtestpoin
+	printf("ループ後のpは%s\n", p);
 	/*%sという書式指定子は、
 	*「指定されたアドレスからnull文字（\0）が見つかるまでずっと文字を表示しなさい」
 	*という意味をを持つ書式指定子。
