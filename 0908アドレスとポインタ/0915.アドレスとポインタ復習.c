@@ -13,7 +13,7 @@ int main(void) {
 		p++;
 	}
 	putchar('\n');
-	printf("ループ後のpは「　」%s\n\n", p);
+	printf("ループ後のpは%s\n\n", p);
 
 	p = str;
 	printf("pは%s\n",p);

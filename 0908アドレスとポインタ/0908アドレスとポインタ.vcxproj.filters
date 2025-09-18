@@ -48,5 +48,20 @@
     <ClCompile Include="0915.アドレスとポインタ復習.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="0918.7.5.配列の引数.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0918.10-1-1.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0918.10-1-2.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0918.7.6.ポインタのポインタ.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0918.7.7.ポインタ配列.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
