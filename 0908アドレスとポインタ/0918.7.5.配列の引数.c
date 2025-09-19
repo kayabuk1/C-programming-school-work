@@ -1,9 +1,10 @@
 //文字列の長さを計算として表示
 #include<stdio.h>
 
-int length1(char str[]);//str[]は宣言の時の使う書き方
+int length1(char str[]);//char str[]は宣言の時の使う書き方
 int length2(char str[]);//[]を書くことで「これは配列です」と型を定義している。
-int length3(char *str);
+int length3(char *str);//しかし関数の仮引数としてchar str[]と記述する時は、
+					   //内部的にはchar *strと同じ意味に変換されている
 
 int main(void) {
 

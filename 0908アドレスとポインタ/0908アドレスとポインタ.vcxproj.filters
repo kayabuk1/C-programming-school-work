@@ -63,5 +63,8 @@
     <ClCompile Include="0918.7.7.ポインタ配列.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="0919_7_8_main%28%29関数とコマンドライン引数.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
