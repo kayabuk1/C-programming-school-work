@@ -1,8 +1,8 @@
 #include<stdio.h>
 
-int length1(char str[8]);
-int length2(char str[]);
-int length3(char* str);
+int length1(char str[8]);//C言語は配列を引数として渡すことは出来ない。
+int length2(char str[]);//引数として渡す配列の大きさは分からない。
+int length3(char* str);//char *strでは配列先頭ｱﾄﾞﾚｽと単一変数のｱﾄﾞﾚｽの二つあり得る。
 //int length4(char[]);
 //int length5(char*);
 /*ｺﾝﾊﾟｲﾗはchar str[]という表記を見て、char型へのﾎﾟｲﾝﾀつまりｱﾄﾞﾚｽ情報が
