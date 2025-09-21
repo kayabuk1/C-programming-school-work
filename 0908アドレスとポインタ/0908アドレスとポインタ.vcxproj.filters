@@ -66,5 +66,20 @@
     <ClCompile Include="0919_7_8_main%28%29関数とコマンドライン引数.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="0921_7_1_アドレスとポインタ復習.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0921_7_2_配列とポインタ復習.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0921_7_3_文字列とﾎﾟｲﾝﾀ復習.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0921_7_4_値渡しとｱﾄﾞﾚｽ渡し.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0921_7_5_配列の引数.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
