@@ -193,7 +193,15 @@
     <ClCompile Include="0921_7_5_配列の引数.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="0921_7_6_ﾎﾟｲﾝﾀのﾎﾟｲﾝﾀ復習.c" />
+    <ClCompile Include="0921_7_6_ﾎﾟｲﾝﾀのﾎﾟｲﾝﾀ復習.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="0921_7_7_ﾎﾟｲﾝﾀ配列復習.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="0921_7_8_main関数とコマンドライン引数復習.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
