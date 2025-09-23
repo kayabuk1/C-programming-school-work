@@ -202,6 +202,7 @@
     <ClCompile Include="0921_7_8_main関数とコマンドライン引数復習.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="0923_ﾎﾟｲﾝﾀまとめ復習.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

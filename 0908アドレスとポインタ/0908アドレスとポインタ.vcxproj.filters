@@ -90,5 +90,8 @@
     <ClCompile Include="0921_7_8_main関数とコマンドライン引数復習.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="0923_ﾎﾟｲﾝﾀまとめ復習.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -2,7 +2,7 @@
 #include<stdlib.h>//standard library標準ﾗｲﾌﾞﾗﾘstdio.hやstring.hの様な専門分野以外の
 					//様々な便利機能が含まれている。何でも屋のイメージとのこと。
 
-void allocate_memory(int** p_ptr) {
+void allocate_memory(int** p_ptr) {//mainで引数受け取った時にp_ptrへの代入がされる
 	*p_ptr = (int*)malloc(sizeof(int));
 	printf("関数内で確保したメモリのアドレス：%p\n", *p_ptr);
 }
