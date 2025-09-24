@@ -46,6 +46,6 @@ int main(void) {
 	a.buy_price = 500;
 	a.num = 50;
 	printf("¤•i‚Ì–¼‘O\t”Ì”„‰¿Ši\td“ü‰¿Ši\tİŒÉ”\n");
-	printf("%-10s\t%8u\t&8u\t%6u\n",
+	printf("%-10s\t%8u\t%8u\t%6u\n",
 		a.name, a.sell_price, a.buy_price, a.num);
 }

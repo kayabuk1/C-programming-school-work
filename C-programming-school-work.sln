@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project_1", "Project_2\Project_2.vcxproj", "{929752FF-26C0-4E22-8EC2-49B1EAD5CEEC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05頃", "Project_2\Project_2.vcxproj", "{929752FF-26C0-4E22-8EC2-49B1EAD5CEEC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project_2", "project2\project2.vcxproj", "{9A36DD6E-E706-4361-B790-B8A205D8E4AB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05中旬", "project2\project2.vcxproj", "{9A36DD6E-E706-4361-B790-B8A205D8E4AB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "条件分岐１", "条件分岐１\条件分岐１.vcxproj", "{A8984AF0-2032-49B0-9888-5B692432D536}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0701頃_条件分岐１", "条件分岐１\条件分岐１.vcxproj", "{A8984AF0-2032-49B0-9888-5B692432D536}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "for文による繰り返し", "for文による繰り返し20250707\for文による繰り返し20250707.vcxproj", "{8EAF5D60-4E25-4A8A-8221-3ECAC2E60CEE}"
 EndProject
@@ -15,7 +15,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.関数の作成と変数�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0908アドレスとポインタ", "0908アドレスとポインタ\0908アドレスとポインタ.vcxproj", "{1F71933E-7238-4FE7-B1B5-48F482AD2F6B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0919_ファイル操作", "0919_ファイル操作\0919_ファイル操作.vcxproj", "{C01CA769-F7E9-4315-9DED-16B65C943404}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0919_ﾌｧｲﾙ操作&構造体", "0919_ファイル操作\0919_ファイル操作.vcxproj", "{C01CA769-F7E9-4315-9DED-16B65C943404}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0924応用1_関数の利用", "0924応用1_関数の利用\0924応用1_関数の利用.vcxproj", "{7414D34F-6834-4273-99DE-C10B3833258B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,14 @@ Global
 		{C01CA769-F7E9-4315-9DED-16B65C943404}.Release|x64.Build.0 = Release|x64
 		{C01CA769-F7E9-4315-9DED-16B65C943404}.Release|x86.ActiveCfg = Release|Win32
 		{C01CA769-F7E9-4315-9DED-16B65C943404}.Release|x86.Build.0 = Release|Win32
+		{7414D34F-6834-4273-99DE-C10B3833258B}.Debug|x64.ActiveCfg = Debug|x64
+		{7414D34F-6834-4273-99DE-C10B3833258B}.Debug|x64.Build.0 = Debug|x64
+		{7414D34F-6834-4273-99DE-C10B3833258B}.Debug|x86.ActiveCfg = Debug|Win32
+		{7414D34F-6834-4273-99DE-C10B3833258B}.Debug|x86.Build.0 = Debug|Win32
+		{7414D34F-6834-4273-99DE-C10B3833258B}.Release|x64.ActiveCfg = Release|x64
+		{7414D34F-6834-4273-99DE-C10B3833258B}.Release|x64.Build.0 = Release|x64
+		{7414D34F-6834-4273-99DE-C10B3833258B}.Release|x86.ActiveCfg = Release|Win32
+		{7414D34F-6834-4273-99DE-C10B3833258B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
