@@ -15,7 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="0924_standard_library.c">
+    <ClCompile Include="0924_1-1_standard_library.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0924_1-ex_is_function_ex.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0924_2-1_多次元配列.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0924_2-2ex_tyepdef_struct_ailias.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0924_2-3_共用体union.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0925_drill_a12-1-2.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0925_drill_a12-2-1.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0925_drill_a12-2-2.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
