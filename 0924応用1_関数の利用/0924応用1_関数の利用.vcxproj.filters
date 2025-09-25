@@ -39,5 +39,8 @@
     <ClCompile Include="0925_drill_a12-2-2.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="0925_ﾋﾞｯﾄﾌｨｰﾙﾄﾞ.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
