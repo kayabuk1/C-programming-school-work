@@ -69,5 +69,23 @@
     <ClCompile Include="1001_3-4_復習.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="1001_3-6_間接参照演算子と++_--.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1001_3-7_dynamic_array.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1001_3-7-ex.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1001_3-8_構造体共有体とﾎﾟｲﾝﾀ.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1001_3-9_関数のﾎﾟｲﾝﾀ.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1001_関数のﾎﾟｲﾝﾀex.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
