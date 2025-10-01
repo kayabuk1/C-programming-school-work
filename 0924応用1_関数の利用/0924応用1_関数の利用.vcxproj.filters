@@ -39,7 +39,34 @@
     <ClCompile Include="0925_drill_a12-2-2.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="0925_ﾋﾞｯﾄﾌｨｰﾙﾄﾞ.c">
+    <ClCompile Include="0925_2-4_ﾋﾞｯﾄﾌｨｰﾙﾄﾞ.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="0925_2-5_enum.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1001_復習用ﾋﾞｯﾄﾌｨｰﾙﾄﾞ.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1001_sizeof.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1001_offsetoof().c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1001_3-2ﾎﾟｲﾝﾀとﾎﾟｲﾝﾀ.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1001_3-3_callby_value_callby_reference.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1001_const.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1001_3-4_特定ﾃﾞｰﾀのｱﾄﾞﾚｽを返す関数.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1001_3-4_復習.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>

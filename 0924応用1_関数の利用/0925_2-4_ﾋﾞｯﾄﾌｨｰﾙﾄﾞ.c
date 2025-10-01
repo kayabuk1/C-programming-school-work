@@ -19,7 +19,7 @@ int main(void) {
 	data.any = 0;
 	printf("%d/%d/%d\n", data.year, data.month, data.day);
 	printf("%x\n%x\n", data,*(unsigned int*)&data);
-	print_binary((unsigned int*)&data, 32);
+	print_binary(*(unsigned int*)&data, 32);
 	return 0;
 }
 
