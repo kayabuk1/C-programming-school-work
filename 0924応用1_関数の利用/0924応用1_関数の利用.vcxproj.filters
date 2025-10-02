@@ -87,5 +87,8 @@
     <ClCompile Include="1001_関数のﾎﾟｲﾝﾀex.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="1002_1-1_復習ctype.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

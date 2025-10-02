@@ -18,5 +18,17 @@
     <ClCompile Include="1001_4-1_文字列変換関数の利用.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="1002_4-2_sringh文字列操作系関数.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1002_4-2-drill7-4-1.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1002_4-2-drill7-4-2.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1002_4-2-drill7-4-3.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
