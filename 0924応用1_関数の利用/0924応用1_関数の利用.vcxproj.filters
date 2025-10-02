@@ -90,5 +90,8 @@
     <ClCompile Include="1002_1-1_復習ctype.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="1002_模写復習用_1-1から.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

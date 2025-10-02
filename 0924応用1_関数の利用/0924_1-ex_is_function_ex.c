@@ -4,7 +4,8 @@
 int main(void) {
 
 	int i, j;
-	int ch;//「ch」はcharacterの頭文字を取った変数。１文字を格納する時良く使う。
+	int ch;
+	//「ch」はcharacterの頭文字を取った変数。１文字を格納する時良く使う。
 
 	printf("  | 0| 1| 2| 3| 4| 5| 6| 7|\n");
 	printf("--+--+--+--+--+--+--+--+--+\n");

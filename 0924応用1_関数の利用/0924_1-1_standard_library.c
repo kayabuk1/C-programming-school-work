@@ -1,5 +1,6 @@
 #include<stdio.h>
-#include<ctype.h>//character typeの略。１文字の種類変換、判定関連の関数のﾍｯﾀﾞﾌｧｲﾙ
+#include<ctype.h>
+//character typeの略。1文字の種類変換,判定関連の関数のﾍｯﾀﾞﾌｧｲﾙ
 
 int main(void) {
 	int c;
