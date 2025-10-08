@@ -96,5 +96,8 @@
     <ClCompile Include="1001_ポインタまとめ復習模写.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="1008_復習模写7_8から.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

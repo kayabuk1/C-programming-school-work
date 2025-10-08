@@ -30,5 +30,8 @@
     <ClCompile Include="1002_4-2-drill7-4-3.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="1008_4-3_時間関数の利用.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
