@@ -54,10 +54,35 @@ int main(void) {
 		(cl_end - cl_start) / CLOCKS_PER_SEC);
 	return 0;
 }*/
+/*
 #include<stdio.h>
 #include<stdlib.h>
 int main(void) {
 	system("echo test");
 	printf("windir=%s\n", getenv("windir"));
 	return 0;
+}*//*
+#include<stdio.h>
+#include<stdarg.h>
+int sum(int sum_data, ...);
+int main(void) {
+	printf("sum=%3d\n", sum(1,2,-1 ));
+	printf("sum=%3d\n", sum(1, 2,3, -1));
+	printf("sum=%3d\n", sum(1, 2,3,4, -1));
+	return 0;
 }
+int sum(int sum_data, ...) {
+	int ans = sum_data;
+	int data;
+	va_list argptr;
+	va_start(argptr, sum_data);
+	while ((data = va_arg(argptr, int)) != -1)
+		ans += data;
+	va_end(argptr);
+	return ans;
+}
+*//*
+sum=  3
+sum=  6
+sum= 10
+*/
