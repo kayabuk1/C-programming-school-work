@@ -126,7 +126,7 @@ C言語では'w'と"w"は明確に区別されているので、１文字でも""で囲む
 具体的にどう区別されているの？
 ⇒「'w'(文字)」内部的に文字コードの119が記録されたコイン。それ値以上の情報は無い
 	「"w"(文字列)」は中に'w'のコインと、'\0'が入っている箱の「住所」
-*/
+*//*
 #include<stdio.h>
 #include<stdlib.h>
 int main(void) {
@@ -139,11 +139,16 @@ int main(void) {
 	}
 	fwrite(data,  sizeof(int),  sizeof(data) / sizeof(int),  fp);
 	/*(第1引数：書込みたいデータが格納されている場所の先頭アドレス,
-	* 第2引数：
-	*/
-
+	* 第2引数：書込むデータの要素1つ分のサイズ
+	* 第3引数：その要素を何個書き込むか.
+	* da4hikisuu 
+	* fp書込先のﾌｧｲﾙ
+	* 訳：dataの場所から、int型のデータを、5個、fpが指すﾌｧｲﾙに書き込んで下さい
+	* 出力:03 00 00 00 0E 00 00 00 0F 00 00 00 09 00 00 00 1A 00 00 00
+	*
+	*//*
 	fclose(fp);
-}
+}*/
 /*
 メモリ上にある整数配列のデータを、そのままの形(バイナリとして)ﾌｧｲﾙに書込む動作
 fprintf(テキスト書込み)---人間が読める。例：fprintf(fp, "%d", 123);
@@ -155,9 +160,104 @@ if (fp == NULL) {
 		printf("file open error\n");
 		exit(1);
 	}なぜこれでプログラムを異常終了させる記述になるのか？
+*//*
+#include<stdio.h>
+#include<stdlib.h>
+int main(void) {
+	FILE* fp;
+	int i;
+	int data[5];
+	fp = fopen("binfile", "rb");
+	if (fp == NULL) {
+		printf("file open error\n");
+		exit(1);
+	}
+	fread(data, sizeof(int), sizeof(data) / sizeof(int), fp);
+	for (i = 0;i < 5;i++) {
+		printf("%d\n", data[i]);
+	}
+	fclose(fp);
+	return 0;
+}
+/*
+3
+14
+15
+9
+26
 */
+#include<stdio.h>
+#define FILEDATAFORMAT "%4d%20s%4d"
+#define DATASIZE 28
+struct Item {
+	int number;
+	char name[20];
+	int price;
+};
+int menu(void);
+void adddata(FILE* fp);
+void listdata(FILE* fp);
+void getdata(FILE* fp);
+int main(void) {
+	int num;
+	FILE* fp;
+	fp = fopen("random_accesfile", "a+");
+	while ((num = menu()) != 0) {
+		fseek(fp, 0, SEEK_SET);
+		switch (num) {
+		case1:
+			adddata(fp);
+			break;
+		case2:
+			listdata(fp);
+			break;
+		case3:
+			getdata(fp);
+			break;
+		}
+	}
+	fclose(fp);
+	return 0;
+}
+int menu(void) {
+	int data;
+	printf("1:データの追加\n");
+	printf("2:データの一覧表示\n");
+	printf("3:データの取り出し\n");
+	printf("4:終了\n");
+	printf("どれを選択しますか？\n");
 
-
-
-
-
+	scanf("%d", &data);
+	if (data <= 0 || data >= 4)
+		data = 0;
+	return data;
+}
+void adddata(FILE* fp) {
+	struct Item data;
+	fseek(fp, 0, SEEK_END);
+	printf("商品番号を入力してください");
+	scanf("%d", &data.number);
+	printf("商品名を入力してください");
+	scanf("%s", &data.name);
+	printf("価格を入力してください");
+	scanf("%d", &data.price);
+	fprintf(fp, FILEDATAFORMAT, data.number, data.name, data.price);
+}
+void listdata(FILE* fp) {
+	struct Item data;
+	while ((fscanf(fp, FILEDATAFORMAT, &data.number, &data.name, &data.price)) != EOF)
+		printf("%4d %20d %4d\n", data.number, data.name, data.price);
+}
+void getdata(FILE* fp) {
+	int count, number;
+	struct Item data;
+	fseek(fp, 0, SEEK_END);
+	count = ftell(fp) / DATASIZE;
+	printf("何番目のコードを出力しますか？(1-%d)\n", count);
+	scanf("%d", &number);
+	if (number >= 1 && number <= count) {
+		fseek(fp, (number - 1) * DATASIZE, SEEK_SET);
+		fscanf(fp, FILEDATAFORMAT, &data.number, &data.name, &data.price);
+		printf("%4d %20d %4d\n", data.number, data.name, data.price);
+	}
+}
