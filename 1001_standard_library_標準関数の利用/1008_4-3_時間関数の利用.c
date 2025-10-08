@@ -186,8 +186,9 @@ int main(void) {
 9
 26
 */
+/*
 #include<stdio.h>
-#define FILEDATAFORMAT "%4d%20s%4d"
+#define FILEDATAFORMAT "%4d%-20s%4d"
 #define DATASIZE 28
 struct Item {
 	int number;
@@ -201,17 +202,17 @@ void getdata(FILE* fp);
 int main(void) {
 	int num;
 	FILE* fp;
-	fp = fopen("random_accesfile", "a+");
+	fp = fopen("random_accesfile", "a+");//"a"はappendは追記、"+"は読み書き両方を意味する。
 	while ((num = menu()) != 0) {
-		fseek(fp, 0, SEEK_SET);
-		switch (num) {
-		case1:
-			adddata(fp);
+		fseek(fp, 0, SEEK_SET);	//fseek()ﾌｧｲﾙﾎﾟｲﾝﾀ(読書きする位置)を強制的移動する関数ｼｰｸﾊﾞｰのｼｰｸ
+		switch (num) {			//fseek(fp, long offset, int origin);
+		case 1:					//		(対象のﾌｧｲﾙ, から何ﾊﾞｲﾄ移動するか, 移動の開始地点)
+			adddata(fp);		//		SEEK_SET(ﾌｧｲﾙ先頭),SEEK_CUR(現在位置),SEEK_END(ﾌｧｲﾙ末尾)
 			break;
-		case2:
+		case 2:
 			listdata(fp);
 			break;
-		case3:
+		case 3:
 			getdata(fp);
 			break;
 		}
@@ -246,7 +247,7 @@ void adddata(FILE* fp) {
 void listdata(FILE* fp) {
 	struct Item data;
 	while ((fscanf(fp, FILEDATAFORMAT, &data.number, &data.name, &data.price)) != EOF)
-		printf("%4d %20d %4d\n", data.number, data.name, data.price);
+		printf("%4d %-20s %4d\n", data.number, data.name, data.price);
 }
 void getdata(FILE* fp) {
 	int count, number;
@@ -258,6 +259,18 @@ void getdata(FILE* fp) {
 	if (number >= 1 && number <= count) {
 		fseek(fp, (number - 1) * DATASIZE, SEEK_SET);
 		fscanf(fp, FILEDATAFORMAT, &data.number, &data.name, &data.price);
-		printf("%4d %20d %4d\n", data.number, data.name, data.price);
+		printf("%4d %-20s %4d\n", data.number, data.name, data.price);
 	}
+}
+*/
+//6.1ﾌｧｲﾙの分割
+#include<stdio.h>
+#include"1008_6-1_ﾌｧｲﾙの分割b.h"
+int main(void) {
+	int a, b, ans;
+	a = 10;
+	b = 20;
+	ans = sum(10, 20);
+	printf("%2d + %2d = %2d\n", a, b, ans);
+	return 0;
 }

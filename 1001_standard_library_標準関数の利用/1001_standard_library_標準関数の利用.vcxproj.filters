@@ -33,5 +33,8 @@
     <ClCompile Include="1008_4-3_時間関数の利用.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="1008_6-1_ﾌｧｲﾙの分割b.h">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
