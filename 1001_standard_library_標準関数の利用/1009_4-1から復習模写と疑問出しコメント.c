@@ -28,14 +28,14 @@ int main(void) {
 		→「C言語の関数は『１つしか』戻り値を返せない」為、主要な結果(変換した数値)は戻り値で、
 		副次的な結果(終了位置)は、引数で渡されたﾎﾟｲﾝﾀ(&ptr)を通じて呼び出し元の数値を直接書き換える事で
 		返す。今回は&ptrでﾎﾟｲﾝﾀ(メモ)自体の格納場所にアクセスしてptr=&str[3]という情報に書き換えている
-	*/
+	*//*
 	printf("100を２進数として取得;%4d,p=%p\n", strtol(str, &ptr, 2), ptr);
 	printf("100を８進数として取得;%4d,p=%p\n", strtol(str, &ptr, 8), ptr);
 	printf("100を16進数として取得;%4d,p=%p\n", strtol(str, &ptr, 10), ptr);
 	printf("100を10進数として取得;%4d,p=%p\n", strtol(str, &ptr, 16), ptr);
 	sprintf(str, "%d", 50); //数値を文字列に変換
 	printf("数値を文字列に変換した結果:%s,p=%p\n", str, ptr);
-	/*
+	*//*
 	そもそもlong型整数の役割とは？int型の役割との違いは？→表現出来る数値の最小範囲
 	sizeof(short)<=sizeof(int)<=sizeof(long)<=sizeof(long long)と定められている。
 	昔16ビットPCなどint=16ビット(約±3万)、long=32bit(約±21億)。現在32bit/64bitpc:int=32bitが多い。
@@ -60,17 +60,24 @@ int main(void) {
 	100を10進数として取得; 256,p=000000DC81CFFBAB
 	数値を文字列に変換した結果:50
 	*/
-	//strtodやstrtolは読み込む文字が無くなったらNULLを返す為、同じ型のﾃﾞｰﾀを繰り返し読むときに便利
-	//なんで便利か？→ループの旅にptrが自動的に次の文字の開始位置まで進んでくれるので。
+	/*strtodやstrtolは読み込む文字が無くなったらNULLを返す為、同じ型のﾃﾞｰﾀを繰り返し読むときに便利
+	なんで便利か？→ループの旅にptrが自動的に次の文字の開始位置まで進んでくれるので。
 	ptr = "10.0 20.0 25.0";
 	do {
 		printf("%f\n", strtod(ptr, &ptr));
 	} while (*ptr != '\0'); //0でも良いが人間に文字列の終わりかどうかﾁｪｯｸしている意図が伝わる\0が良い
-}/*
+*//*
  直接charﾎﾟｲﾝﾀ型の変数pに文字列を代入してもなぜ大丈夫？→コンパイル時に""で囲まれた文字列は内部的に
  先頭要素のアドレスに変換されている。
- */*/
-
+ */
+//1009_4-2_文字列操作系関数(string.h)
+#include<stdio.h>
+#include<string.h>
+int main(void) {
+	char str01[] = "abcdefg 12345\0\\012345", str02[80] = "";	//strcpyで使う為の空文字列を用意
+	printf("str:%-15s\n", str01);
+	printf("strlen(str):-15%d\n", strlen(str01));
+}
 
 
 
