@@ -142,8 +142,13 @@
     <ClCompile Include="1002_4-2_sringh文字列操作系関数.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="1008_6-1_ﾌｧｲﾙの分割b.h" />
-    <ClCompile Include="1008_4-3_時間関数の利用.c" />
+    <ClCompile Include="1008_6-1_ﾌｧｲﾙの分割b.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1008_4-3_時間関数の利用.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1009_4-1から復習模写と疑問出しコメント.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
