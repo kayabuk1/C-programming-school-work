@@ -74,11 +74,17 @@ int main(void) {
 #include<stdio.h>
 #include<string.h>
 int main(void) {
-	char str01[] = "abcdefg 12345\0\\012345", str02[80] = "";	//strcpyで使う為の空文字列を用意
+	char str01[] = "\\0 12345\0\\012345", str02[80] = "";	//strcpyで使う為の空文字列を用意
 	printf("str:%-15s\n", str01);
-	printf("strlen(str):-15%d\n", strlen(str01));
-}
+	printf("strlen(str):%-15d\n", strlen(str01));
+	printf("sizeof(str):%-15zu\n", sizeof(str01) / sizeof(&str01[0]));
 
+	printf("strchr")
+}
+/*
+str:abcdefg 12345
+strlen(str):-1513
+*/
 
 
 
