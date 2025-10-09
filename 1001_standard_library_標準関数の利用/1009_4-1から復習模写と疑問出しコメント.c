@@ -69,57 +69,53 @@ int main(void) {
 *//*
  直接charﾎﾟｲﾝﾀ型の変数pに文字列を代入してもなぜ大丈夫？→コンパイル時に""で囲まれた文字列は内部的に
  先頭要素のアドレスに変換されている。
- */
-//1009_4-2_文字列操作系関数(string.h)
+ *//*1009_4-2_文字列操作系関数(string.h)
 #include<stdio.h>
 #include<string.h>
 int main(void) {
-	char str01[] = "\\0 12345\0\\012345", str02[80] = "";	//strcpyで使う為の空文字列を用意
-	printf("str:%-15s\n", str01);
-	printf("strlen(str):%-15d\n", strlen(str01));
-	printf("sizeof(str):%-15zu\n", sizeof(str01) / sizeof(&str01[0]));
+	char str01[] = "cabbae\\0 12345\0\\012345", str02[80] = "";	//strcpyで使う為の空文字列を用意
+	printf("str:%15s\n", str01); //ｴｽｹｰﾌﾟｼｹｰﾝｽで\0が表示される
+	printf("strlen(str):%15d\n", strlen(str01)); //\0の手前まで\0 12345の8文字
+	printf("sizeof(str):%15zu\n", sizeof(str01) / sizeof(str01[0]));
+	//配列確保に使われたﾒﾓﾘｻｲｽﾞ=\0含む＋自動追加の\0=17バイト
 
-	printf("strchr")
-}
+	printf("strchr(str01,'1'):%15s\n",strchr(str01,'1'));//文字検索後最初に発見位置へのﾎﾟｲﾝﾀを戻す
+	printf("strstr(str01,\"12\"):%15s\n", strstr(str01, "12"));//文字列検索
+	//					↑の\はｴｽｹｰﾌﾟｼｹｰﾝｽ。printfに終わりの""と勘違い指せないために前に付ける
+	printf("strcspn(str01, \"12c\"):%15d\n", strcspn(str01, "12c"));
+	//少し特殊。先頭から「12cのどれか１文字『にも』一致しない文字」が何時続くかを数えるので→3
+	//実用的にはどう使うのだろう？\0とかも指定出来るのかな？
+//区切り文字「,」等が最初に出てくる場所を探すのに便利。\0も指定出来る
+//み合わせて"Sato,25,Tokyo"の様なﾃﾞｰﾀからSatoだけ抜き出したりする。
+
+	printf("strspn(str01,\"abc\"):%15d\n", strspn(str01, "abc"));
+	//これも特殊。先頭から"abc"だけで構成された部分が何文字続くか調べる
+	//これもどんな時に使うのだろう？
+	//文字列の先頭が許可された文字だけで構成されているか調べる時。例ユーザIDなど。
+	//さっきから警告に出てくる%zdとはなんだろうか？
+	strcpy(str02, str01);
+	printf("str02:%s\n", str02);
+	strncpy(str02, str01, 5); //strncpyはヌル文字を自動追加してくれないので自分で追加する必要がある
+	printf("str02:%s\n", str02);//C言語のNULLはRDBMSのNULLとは意味が違うので注意。
+	if (strncmp(str01, str02, 7)== 0)
+		printf("strncmp(str01,str02,5)==0\n");
+	else
+		printf("strncmp(str01,str02,5)!=0\n");
+	strncat(str01, "ABCDEFG", 3);
+	strcat(str02, "ABCDEFG");
+	printf("str01:%s\n", str01);
+	printf("str02:%s\n", str02);
+	return 0;
+}*/
 /*
-str:abcdefg 12345
-strlen(str):-1513
+str: cabbae\0 12345
+strlen(str):             14
+sizeof(str):             23
+strchr(str01,'1'):          12345
+strstr(str01,"12"):          12345
+strcspn(str01, "12c"):              0
+strspn(str01,"abc"):              5
+str02:cabbae\0 12345
+str02:cabbae\0 12345
+strncmp(str01,str02,5)==0
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
