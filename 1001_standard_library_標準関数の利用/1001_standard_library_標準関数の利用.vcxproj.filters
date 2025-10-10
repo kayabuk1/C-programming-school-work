@@ -36,5 +36,34 @@
     <ClCompile Include="1008_6-1_ﾌｧｲﾙの分割b.h">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="1009_4-1から復習模写と疑問出しコメント.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1010_6-2_ﾌﾟﾘﾌﾟﾛｾｽの応用.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1010_6-2_ﾌﾟﾘﾌﾟﾛｾｽの応用サブ読込ファイル.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1010_6-4_変数のﾌｧｲﾙｽｺｰﾌﾟ_extern_static.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1010_6-4_変数のﾌｧｲﾙｽｺｰﾌﾟ_サブ.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1010_6-5_関数のﾌｧｲﾙｽｺｰﾌﾟ.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1010_6-5_関数のﾌｧｲﾙｽｺｰﾌﾟ_サブ.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="1010_8-1_ﾋﾞｯﾄ演算子.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="1010_6-2_ﾌﾟﾘﾌﾟﾛｾｽの応用.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -148,7 +148,23 @@
     <ClCompile Include="1008_4-3_時間関数の利用.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="1009_4-1から復習模写と疑問出しコメント.c" />
+    <ClCompile Include="1009_4-1から復習模写と疑問出しコメント.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1010_6-2_ﾌﾟﾘﾌﾟﾛｾｽの応用.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1010_6-2_ﾌﾟﾘﾌﾟﾛｾｽの応用サブ読込ファイル.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1010_6-4_変数のﾌｧｲﾙｽｺｰﾌﾟ_extern_static.c" />
+    <ClCompile Include="1010_6-4_変数のﾌｧｲﾙｽｺｰﾌﾟ_サブ.c" />
+    <ClCompile Include="1010_6-5_関数のﾌｧｲﾙｽｺｰﾌﾟ.c" />
+    <ClCompile Include="1010_6-5_関数のﾌｧｲﾙｽｺｰﾌﾟ_サブ.c" />
+    <ClCompile Include="1010_8-1_ﾋﾞｯﾄ演算子.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="1010_6-2_ﾌﾟﾘﾌﾟﾛｾｽの応用.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
