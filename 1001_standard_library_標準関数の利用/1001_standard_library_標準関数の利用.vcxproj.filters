@@ -60,6 +60,9 @@
     <ClCompile Include="1010_8-1_ﾋﾞｯﾄ演算子.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="1010_8-2_条件演算子.c">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1010_6-2_ﾌﾟﾘﾌﾟﾛｾｽの応用.h">
