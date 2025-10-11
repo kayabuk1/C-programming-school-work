@@ -175,6 +175,7 @@
     <ClCompile Include="1010_8-2_条件演算子.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="1011_4-3_time.hの疑問書出しと復習模写.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1010_6-2_ﾌﾟﾘﾌﾟﾛｾｽの応用.h" />
