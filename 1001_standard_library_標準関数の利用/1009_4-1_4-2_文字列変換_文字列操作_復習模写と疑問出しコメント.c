@@ -1,16 +1,16 @@
-/*1009文字列変換関数模写
+//1009文字列変換関数模写
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-
-int main(void) {
+int main(void)
+{
 	char str[] = "100 256.0", * ptr;
 	printf("%-5d\n", atoi(str)); //ASCII to Int
 	printf("%-5lf\n", atof(str)); //ASCII to Float
 	printf("%-5d\n", atol(str)); //ASCII to Long
 
 	printf("最初に取得した実数:%5lf\n", strtod(str, &ptr)); //文字列→double型に変換
-	//	 strtod(文字列,読込終了後の先頭ｱﾄﾞﾚｽ)
+								  //    strtod(文字列,読込終了後の先頭ｱﾄﾞﾚｽ)
 	printf("残った文字列\t:%5s\n", ptr);
 	printf("次に取得した実数\t:%5lf\n", strtod(ptr, &ptr)); //文字列→double型に変換
 	/*
@@ -28,14 +28,14 @@ int main(void) {
 		→「C言語の関数は『１つしか』戻り値を返せない」為、主要な結果(変換した数値)は戻り値で、
 		副次的な結果(終了位置)は、引数で渡されたﾎﾟｲﾝﾀ(&ptr)を通じて呼び出し元の数値を直接書き換える事で
 		返す。今回は&ptrでﾎﾟｲﾝﾀ(メモ)自体の格納場所にアクセスしてptr=&str[3]という情報に書き換えている
-	*//*
+	*/
 	printf("100を２進数として取得;%4d,p=%p\n", strtol(str, &ptr, 2), ptr);
 	printf("100を８進数として取得;%4d,p=%p\n", strtol(str, &ptr, 8), ptr);
 	printf("100を16進数として取得;%4d,p=%p\n", strtol(str, &ptr, 10), ptr);
 	printf("100を10進数として取得;%4d,p=%p\n", strtol(str, &ptr, 16), ptr);
 	sprintf(str, "%d", 50); //数値を文字列に変換
 	printf("数値を文字列に変換した結果:%s,p=%p\n", str, ptr);
-	*//*
+}	/*
 	そもそもlong型整数の役割とは？int型の役割との違いは？→表現出来る数値の最小範囲
 	sizeof(short)<=sizeof(int)<=sizeof(long)<=sizeof(long long)と定められている。
 	昔16ビットPCなどint=16ビット(約±3万)、long=32bit(約±21億)。現在32bit/64bitpc:int=32bitが多い。
@@ -48,6 +48,7 @@ int main(void) {
 	A.例えば「"%d円の%s"」と言う書式(設計図)と「"100"と"リンゴ"」という複数の部品を受け取り
 	新しい文字列を作る複雑な動作をする為。なので、どこに完成品(新しい文字列)を納品するか、
 	どんな仕様(書式)でつくるか、どの部品(%の数に合わせて可変長)を使うかのより多くの情報が必要になる
+	↓出力結果
 	100
 	100.000000
 	100
@@ -69,6 +70,7 @@ int main(void) {
 *//*
  直接charﾎﾟｲﾝﾀ型の変数pに文字列を代入してもなぜ大丈夫？→コンパイル時に""で囲まれた文字列は内部的に
  先頭要素のアドレスに変換されている。
+ 
  *//*1009_4-2_文字列操作系関数(string.h)
 #include<stdio.h>
 #include<string.h>

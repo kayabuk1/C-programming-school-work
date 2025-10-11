@@ -148,7 +148,7 @@
     <ClCompile Include="1008_4-3_時間関数の利用.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="1009_4-1から復習模写と疑問出しコメント.c">
+    <ClCompile Include="1009_4-1_4-2_文字列変換_文字列操作_復習模写と疑問出しコメント.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="1010_6-2_ﾌﾟﾘﾌﾟﾛｾｽの応用.c">
@@ -175,7 +175,9 @@
     <ClCompile Include="1010_8-2_条件演算子.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="1011_4-3_time.hの疑問書出しと復習模写.c" />
+    <ClCompile Include="1011_4-3_time.hの疑問書出しと復習模写.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1010_6-2_ﾌﾟﾘﾌﾟﾛｾｽの応用.h" />
